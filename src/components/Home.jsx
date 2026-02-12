@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { Icons } from '../data/Icons.jsx'
 import { Stack } from '../data/Stack.jsx'
@@ -17,13 +16,13 @@ export const Home = () => {
                 second: '2-digit',
             });
 
-            setTime(currentTime);
+            setTime(currentTime); // Rerender triggered by state update
         };
 
         updateTime();
-        const intervalId = setInterval(updateTime, 1000);
+        const intervalId = setInterval(updateTime, 1000); // Update time every second causing rerender every second
 
-        return () => clearInterval(intervalId);
+        return () => clearInterval(intervalId); // Cleanup interval on component unmount to prevent memory leaks. called when component is removed from DOM (Unmounted), ensuring that the interval is cleared and doesn't continue to run in the background. This prevents potential memory leaks and unintended behavior.
     }, []);
 
     return (
@@ -76,25 +75,27 @@ export const Home = () => {
                             <p className='bio'>{"I’m a front-end and full-stack developer passionate about building responsive, user-focused web applications that deliver meaningful user experiences. I’m committed to continuously expanding my skills through hands-on projects, staying current with modern technologies, and writing scalable, maintainable code."}</p>
                         </div>
                     </article>
-                    <article className='tech-stack'>
-                        <div className='tech-header'>
-                            <div className='tech-icon-title'>
-                                {Icons.react}
+                    <article className='education-section'>
+                        <div className='education-header'>
+                            <div className='education-icon-title'>
+                                {Icons.education}
                             </div>
-                            <p className='tech-title'>Tech Stack</p>
+                            <p className='education-title'>Education</p>
                         </div>
-                        <div className='stack-types'>
-                            <div className='stack-type'>
-                                {Stack.map((item, index) => {
-                                    const name = Object.keys(item)[0];   // "github"
-                                    const icon = item[name];             // <FaGithub />
-
-                                    return (
-                                        <div key={name} className="stack-item">
-                                            {icon}
-                                        </div>
-                                    );
-                                })}
+                        <div className='education-container'>
+                            <div className='education-card'>
+                                <div className='education-content'>
+                                    <h2 className='education-title'>Aurora University</h2>
+                                    <p className='education-degree'>Bachelor of Science in Computer Science</p>
+                                    <p className='education-description'>Graduated with a strong foundation in computer science principles, software development, and problem-solving skills. Completed coursework in data structures, algorithms, databases, and web development.</p>
+                                    <p className='education-dates'>2021-2024</p>
+                                </div>
+                                <div className='education-content'>
+                                    <h2 className='education-title'>Waubonsee Community College</h2>
+                                    <p className='education-degree'>Associate of Science in Computer Science</p>
+                                    <p className='education-description'>General Education coursework with a focus on foundational computer science concepts and skills.</p>
+                                    <p className='education-dates'>2014-2019</p>
+                                </div>
                             </div>
                         </div>
                     </article>
@@ -124,13 +125,50 @@ export const Home = () => {
                                                     <li key={idx}>{highlight}</li>
                                                 ))}
                                             </ul> */}
-                                            <a href={project.repo} className='project-link' target="_blank" rel="noopener noreferrer">Repo</a>
-                                            <a href={project.website} className='project-link' target="_blank" rel="noopener noreferrer">Live Site</a>
+                                            <div className='project-links'>
+                                                <a href={project.repo} className='project-link' target="_blank" rel="noopener noreferrer">
+                                                    <p>Repo</p>
+                                                    <p>{Icons.githubProject}</p>
+                                                </a>
+                                                <a href={project.website} className='project-link' target="_blank" rel="noopener noreferrer">
+                                                    <p>Website</p>
+                                                    <p>{Icons.world}</p>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 ))}
                             </div>
                         </div>
+                    </article>
+                    <article className='tech-stack'>
+                        <div className='tech-header'>
+                            <div className='tech-icon-title'>
+                                {Icons.react}
+                            </div>
+                            <p className='tech-title'>Tech Stack</p>
+                        </div>
+                        <div className='stack-types'>
+                            <div className='stack-type'>
+                                {Stack.map((item, index) => {
+                                    const name = Object.keys(item)[0];   // "github"
+                                    const icon = item[name];             // <FaGithub />
+
+                                    return (
+                                        <div key={name} className="stack-item">
+                                            {icon}
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        </div>
+                    </article>
+                    <article className='footer-section'>
+                        <footer className='footer'>
+                            <p>
+                                © {new Date().getFullYear()} Alexander Brown. All rights reserved.
+                            </p>
+                        </footer>
                     </article>
                 </section>
             </main>

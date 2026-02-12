@@ -3,7 +3,6 @@ import { SiRender } from "react-icons/si";
 import { RiSupabaseFill } from "react-icons/ri";
 import { SiExpress } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
-import { TiWorld } from "react-icons/ti";
 import wImage from '../imgs/weatherapp.png';
 import tImage from '../imgs/todoapp.png';
 
