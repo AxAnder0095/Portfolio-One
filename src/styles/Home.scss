@@ -449,7 +449,24 @@ $large-desktop: 1400px;
 
     .intro {
         .intro-left {
-           display: none;
+            display: none;
+        }
+    }
+}
+
+@media (max-width: $mobile-screen) {
+    .nav {
+        font-size: 0.8rem;
+    }
+
+    .tech-stack {
+        .stack-types {
+            .stack-type {
+                .stack-item {
+                    padding: 1.5rem;
+                    font-size: 30px;
+                }
+            }
         }
     }
 }
