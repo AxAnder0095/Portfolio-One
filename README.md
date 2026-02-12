@@ -1,16 +1,38 @@
-# React + Vite
+# 👋 Hi, I'm Alexander Brown
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I'm a Frontend Developer / Full-Stack Developer in training
+passionate about building clean, responsive and user-focused web applications.
 
-Currently, two official plugins are available:
+This portfolio showcases my projects, technical skills, and learning journey.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 About This Project
 
-## React Compiler
+This is my personal portfolio website built to present:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 📚 My education background
+- 💻 Technical skills and tech stack
+- 🛠 Personal and academic projects
+- 📈 My ongoing learning journey
 
-## Expanding the ESLint configuration
+Built with:
+- React
+- Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📚 Currently Learning
+
+- Advanced React patterns
+- Backend architecture
+- System design fundamentals
+- UI/UX design
+- Backend Frameworks
+
+## 🎯 Future Goals
+
+- Land a junior developer role
+- Deepen my understanding of UI/UX principles, accessibility, and design systems.
+- Build interfaces that are not only functional, but intuitive and visually polished.
+
+
+
+
+
