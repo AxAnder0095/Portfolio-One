@@ -56,7 +56,7 @@ $large-desktop: 1400px;
             .me-img {
                 width: 250px;
                 height: auto;
-                border-radius: 1rem;
+                border-radius: 50%;
             }
 
             // .cover {
@@ -64,8 +64,8 @@ $large-desktop: 1400px;
             //     inset: 0;
             //     width: 250px;
             //     height: auto;
-            //     background-color: rgba($color: $primary-color, $alpha: 0.2);
-            //     border-radius: 1rem;
+            //     background-color: rgba($color: $primary-color, $alpha: 0.1);
+            //     border-radius: 50%;
             // }
         }
 
@@ -368,6 +368,7 @@ $large-desktop: 1400px;
                     color: rgba($color: #FFF, $alpha: 1);
                     // color: rgba($color: $primary-color, $alpha: 1);
                 }
+
                 .education-degree {
                     color: rgba($color: $primary-color, $alpha: 1);
                     font-size: 1.4rem;
@@ -443,6 +444,12 @@ $large-desktop: 1400px;
             .stack-type {
                 grid-template-columns: repeat(4, minmax(0, 1fr));
             }
+        }
+    }
+
+    .intro {
+        .intro-left {
+           display: none;
         }
     }
 }

@@ -15,12 +15,14 @@ import { FaFigma } from "react-icons/fa";
 import { FaFileExcel } from "react-icons/fa";
 import { IoLogoFirebase } from "react-icons/io5";
 import { DiMysql } from "react-icons/di";
+import { FaPython } from "react-icons/fa";
 
 
 export const Stack = [
     {react: <FaReact fill="#61DBFB" />},
     {javascript: <IoLogoJavascript fill="#f0db4f" />},
     {nodejs: <FaNodeJs fill="#68A063" />},
+    {python: <FaPython fill="#306998" />},
     {html5: <FaHtml5 fill="#e34c26" />},
     {css3: <FaCss3Alt fill="#264de4" />},
     {postgresql: <BiLogoPostgresql fill="#336791" />},

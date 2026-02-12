@@ -3,11 +3,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { MdDownload } from "react-icons/md";
 import { FaBook } from "react-icons/fa";
-import { TiWorld } from "react-icons/ti";
 import { BiWorld } from "react-icons/bi";
-
-
-
 
 export const Icons = {
     resume: <MdDownload size={20} fill="#ffffff" />,

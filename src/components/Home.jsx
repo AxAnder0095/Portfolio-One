@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Icons } from '../data/Icons.jsx'
 import { Stack } from '../data/Stack.jsx'
 import { Projects } from '../data/Projects.jsx'
-import myImage from '../imgs/thumb2.jpg'
+import me from '../imgs/me.jpg'
 import '../styles/Home.scss'
 
 export const Home = () => {
@@ -39,7 +39,7 @@ export const Home = () => {
                         <div className='intro-left'>
                             <div className='img-container'>
                                 <div className='cover' />
-                                <img src={myImage} alt="Alexander Brown" className='me-img' />
+                                <img src={me} alt="Alexander Brown" className='me-img' />
                             </div>
                             <div className='social-links'>
                                 <a
