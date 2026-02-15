@@ -11,7 +11,8 @@ import tImage from '../imgs/todoapp.png';
 import expense from '../imgs/expenseTrackerApp.png';
 import showroom from '../imgs/showroom.png';
 import animations from '../imgs/animations.png';
-import { FaN } from "react-icons/fa6";
+import crop from '../imgs/crop.png';
+// import { FaN } from "react-icons/fa6";
 
 
 
@@ -35,7 +36,7 @@ export const Projects = [
         ]
     },
     {
-        title: "Authenticated Todo CRUD Application",
+        title: "Todo CRUD App",
         description: "A secure, full-stack task management web application with authentication, protected routes, and real time database integration. ",
         highlights: [
             "Built full CRUD functionality with Supabase PostgreSQL and persistent authentication",
@@ -52,7 +53,7 @@ export const Projects = [
         ]
     },
     {
-        title: "Expense Tracker Application",
+        title: "Expense Tracker App",
         description: "A full-stack expense tracking web application that allows users to manage their finances by adding, and deleting expenses, with real-time data persistence and user authentication.",
         highlights: [
             "",
@@ -84,7 +85,7 @@ export const Projects = [
         ]
     },
     {
-        title: "Showroom REST API Practice",
+        title: "REST API Showroom",
         description: "A RESTful API built with Node.js and Express, designed to manage a showroom inventory system, allowing for efficient handling of products.",
         highlights: [
             "",
@@ -97,6 +98,21 @@ export const Projects = [
         techStack: [
             <FaReact size={30} fill="#46a6ff" />,
             <FaNodeJs size={30} fill="#16bb00" />,
+        ]
+    },
+    {
+        title: "Image Cropper",
+        description: "A web application that allows users to upload and crop images with a user-friendly interface.",
+        highlights: [
+            "",
+            "",
+            ""
+        ],
+        repo: "https://github.com/AxAnder0095/Image-Cropper",
+        website: "https://github.com/AxAnder0095/Image-Cropper",
+        image: crop,
+        techStack: [
+            <FaReact size={30} fill="#46a6ff" />,
         ]
     },
 ]

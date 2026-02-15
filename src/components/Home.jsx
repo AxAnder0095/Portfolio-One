@@ -119,19 +119,13 @@ export const Home = () => {
                                             </div>
                                             <h3 className='project-title'>{project.title}</h3>
                                             <p className='project-description'>{project.description}</p>
-                                            {/* <h4 className='highlights'>Highlights</h4>
-                                            <ul className='project-highlights'>
-                                                {project.highlights.map((highlight, idx) => (
-                                                    <li key={idx}>{highlight}</li>
-                                                ))}
-                                            </ul> */}
                                             <div className='project-links'>
                                                 <a href={project.repo} className='project-link' target="_blank" rel="noopener noreferrer">
                                                     <p>Repo</p>
                                                     <p>{Icons.githubProject}</p>
                                                 </a>
                                                 <a href={project.website} className='project-link' target="_blank" rel="noopener noreferrer">
-                                                    <p>Website</p>
+                                                    <p>Demo</p>
                                                     <p>{Icons.world}</p>
                                                 </a>
                                             </div>

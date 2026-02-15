@@ -237,8 +237,8 @@ $large-desktop: 1400px;
 
         .project-wrapper {
             display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1rem;
 
             .project-card {
                 border-radius: 0.5rem;
@@ -257,7 +257,12 @@ $large-desktop: 1400px;
                     background-color: #161616;
 
                     .project-title {
-                        color: rgba($color: $primary-text-color, $alpha: 1)
+                        color: rgba($color: $primary-text-color, $alpha: 1);
+                        display: -webkit-box;
+                        -webkit-line-clamp: 1;
+                        line-clamp: 1;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
                     }
 
                     .project-description {
@@ -265,7 +270,7 @@ $large-desktop: 1400px;
                         line-height: 1.5rem;
                         display: -webkit-box;
                         -webkit-line-clamp: 2;
-                        line-clamp: 3;
+                        line-clamp: 2;
                         -webkit-box-orient: vertical;
                         overflow: hidden;
                     }
@@ -414,6 +419,7 @@ $large-desktop: 1400px;
     .projects-section {
         .projects-container {
             .project-wrapper {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
                 .project-card {
                     .project-content {
                         .project-title {
